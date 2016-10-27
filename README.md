@@ -3,14 +3,10 @@
 <h3>Authors:</h3>
 <ul><li>Gian Brazzini</li><li>Eduardo Vergara</li><li>Patrick Schmidt</li><li>Randi Sanchez</li></ul>
 <br>
-<br>
+
 <h2>Mininet Router</h2>
 <ul><li>AWS Server: Only one machine may be used at a time, communicate with team via groupme when using it.</li>
 <li>To do: file 'sr_router.c' has a to do list of code we need to write in order for this to work.</li>
 
 </ul>
-
-sr_router.c
-
-comments that need to be done
 
