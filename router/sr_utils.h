@@ -33,12 +33,17 @@ uint16_t cksum(const void *_data, int len);
 uint16_t ethertype(uint8_t *buf);
 uint8_t ip_protocol(uint8_t *buf);
 
+struct in_addr convert_to_in_addr(uint32_t ip);
+struct sr_rt *sr_longest_prefix_match(struct sr_instance *sr, struct in_addr addr);
+
 void print_addr_eth(uint8_t *addr);
 void print_addr_ip(struct in_addr address);
 void print_addr_ip_int(uint32_t ip);
 
 void print_hdr_eth(uint8_t *buf);
+uint16_t get_ip_header_len(sr_ip_hdr_t *ip_header);
 void print_hdr_ip(uint8_t *buf);
+sr_icmp_hdr_t *get_icmp_header(sr_ip_hdr_t *ip_header);
 void print_hdr_icmp(uint8_t *buf);
 void print_hdr_arp(uint8_t *buf);
 
